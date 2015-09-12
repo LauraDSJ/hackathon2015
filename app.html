@@ -120,48 +120,48 @@
         </div><!--profile-->
       
         <div id="msg" class="white-bg">
-          <table class="table">
+          <table class="table" id="msg-list">
             <tbody> 
                 <tr>
                     <td><a class="close red-link" id="close-msg" href="#">[x]</a></td>
                     <td>messages</td>
                 </tr> 
-                <tr>
+                <tr class="msg-row">
                     <td><img class="img-circle" src="http://placehold.it/50x50"></td>
                     <td class="text-left">
                         <h4>emily</h4>
                         <p>Giddy-up... no, no this way... good horsey. we're not sheep!</p>
                     </td>
                 </tr>
-                <tr>
+                <tr class="msg-row">
                     <td><img class="img-circle" src="http://placehold.it/50x50"></td>
                     <td class="text-left">
                         <h4>emily</h4>
                         <p>Giddy-up... no, no this way... good horsey. we're not sheep!</p>
                     </td>
                 </tr>
-                <tr>
+                <tr class="msg-row">
                     <td><img class="img-circle" src="http://placehold.it/50x50"></td>
                     <td class="text-left">
                         <h4>emily</h4>
                         <p>Giddy-up... no, no this way... good horsey. we're not sheep!</p>
                     </td>
                 </tr>
-                <tr>
+                <tr class="msg-row">
                     <td><img class="img-circle" src="http://placehold.it/50x50"></td>
                     <td class="text-left">
                         <h4>emily</h4>
                         <p>Giddy-up... no, no this way... good horsey. we're not sheep!</p>
                     </td>
                 </tr>
-                <tr>
+                <tr class="msg-row">
                     <td><img class="img-circle" src="http://placehold.it/50x50"></td>
                     <td class="text-left">
                         <h4>emily</h4>
                         <p>Giddy-up... no, no this way... good horsey. we're not sheep!</p>
                     </td>
                 </tr>
-                <tr>
+                <tr class="msg-row">
                     <td><img class="img-circle" src="http://placehold.it/50x50"></td>
                     <td class="text-left">
                         <h4>emily</h4>
@@ -171,6 +171,57 @@
             </tbody>  
           </table>
         </div><!--messages-->
+      
+        <div id="chat" class="white-bg">
+            
+            <div class="separation-20"></div>
+            
+                    <a class="close red-link" id="close-chat" href="#">[x]</a>
+                    <p>emily</p>
+        
+          <section>
+            <div class="from-me">
+              <p>Hey there! What's up?</p>
+            </div>
+          <div class="clear"></div>
+            <div class="from-them">
+              <p>Checking out iOS7 you know..</p>
+            </div>
+          <div class="clear"></div>
+            <div class="from-me">
+              <p>Check out this bubble!</p>
+            </div>
+          <div class="clear"></div>
+            <div class="from-them">
+              <p>It's pretty cool!</p>
+            </div>
+          <div class="clear"></div>
+            <div class="from-me">
+              <p>Yeah it's pure CSS &amp; HTML</p>
+            </div>
+          <div class="clear"></div>
+            <div class="from-them">
+              <p>Wow that's impressive. But what's even more impressive is that this bubble is really high.</p>
+            </div>
+          </section>
+           
+          <div class="clear"></div>
+            
+            <div class="separation-20"></div>
+            
+          <form>
+              <div class="row" style="padding-right:10px;padding-left:10px;">
+                  <div class="col-xs-9">
+                <input style="float:left" type="text" class="form-control" id="text-msg" placeholder="write message">
+                </div>
+                  <div class="col-xs-3">
+                <button type="submit" class="btn btn-default">Send</button>
+                  </div>
+              </div>
+            </form>
+            
+            <div class="separation-10"></div>
+        </div><!--chat-->
         
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.773187529151!2d-116.61936889999998!3d31.858386699999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d8926f79568109%3A0x9427e4ed2fb26c2!2sRiviera!5e0!3m2!1ses!2smx!4v1442034429650" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
       
@@ -196,6 +247,7 @@
     $("#map-screen-2").hide();
     $("#profile").hide();
     $("#msg").hide();
+    $("#chat").hide();
         
     $("#map-screen-1").click( function() {
         $("#map-screen-1").hide();
@@ -222,9 +274,21 @@
         $("#msg").hide();
     });
         
+    $("#msg-list .msg-row").click(function() {
+       $("#chat").show(); 
+    });
+        
+    $("#close-chat").click(function() {
+        $("#chat").hide();
+    });
+        
+    //TOGGLE CHECK BOX    
     $(function(argument) {
       $('[type="checkbox"]').bootstrapSwitch();
     })
+    
+    //MESSAGE BUBBLES
+    
     </script>
   </body>
 </html>
