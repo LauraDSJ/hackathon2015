@@ -1,0 +1,49 @@
+html, body {
+    height:100%;
+}
+
+body {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff5c53+0,ff3b30+100 */
+background: rgb(255,92,83); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,92,83,1) 0%, rgba(255,59,48,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,92,83,1)), color-stop(100%,rgba(255,59,48,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,92,83,1) 0%,rgba(255,59,48,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,92,83,1) 0%,rgba(255,59,48,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,92,83,1) 0%,rgba(255,59,48,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,92,83,1) 0%,rgba(255,59,48,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c53', endColorstr='#ff3b30',GradientType=0 ); /* IE6-9 */
+}
+
+.center-vertical {
+  position:relative;
+    top:50%;
+    -webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    vertical-align:top;
+}
+
+.full-height { height:100%; }
+
+.separation-40 { height:40px; display: block; }
+
+/* BOOTSTRAP CHANGES */
+.btn {
+    width:100%;
+}
+.btn-default {
+    background-color:#ff4e28;
+    border-color: #ff6c2b;
+    color:#fff;
+}
+.btn-default:hover,
+.btn-default:active,
+.btn-default:visited {
+    border-color: #ff6c2b;
+    background-color:#ff6c2b;
+    color:#fff;
+}
+
+/* SCREEN 1. WELCOME SCREEN */
+
+#welcome-img {width:70%}
