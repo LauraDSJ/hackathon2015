@@ -39,8 +39,8 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
                   </div>
                   <div class="form-group">
-                  <button type="submit" class="btn btn-default">login</button>
-                  <button type="button" class="btn btn-default">register</button>
+                  <button type="submit" class="btn btn-default go-app">login</button>
+                  <button type="button" class="btn btn-default go-app">register</button>
                   </div>
                   <div class="form-group">
                   <button type="button" class="btn btn-default">login with facebook</button>
@@ -58,5 +58,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+      
+    <script>
+        $(".go-app").click( function() {
+            window.location.replace("app.html");
+        });
+    </script>
   </body>
 </html>

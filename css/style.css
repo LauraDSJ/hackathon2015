@@ -1,5 +1,5 @@
 html, body {
-    height:100%;
+    min-height:100%;
 }
 
 body {
@@ -44,6 +44,66 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c53', end
     color:#fff;
 }
 
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-brand,
+.navbar-header {
+    float:right !important;
+}
+
+.navbar-default .navbar-brand {
+    color:#fff;
+}
+
+.btn-group .btn{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
 /* SCREEN 1. WELCOME SCREEN */
 
 #welcome-img {width:70%}
+
+/* SCREEN 2. MAP */
+.map {
+    position:absolute;
+    top: 50px;
+    right:0;
+    left:0;
+    bottom: 0;
+    z-index: -10;
+}
+
+#map-screen-1 {
+    background-color: rgba(27, 77, 123, 0.4);
+    background: rgba(27, 77, 123, 0.4);
+    
+    background-image: url(img/meeting-ya.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    position:absolute;
+    top: 50px;
+    right:0;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#map-screen-2 {
+    background-color: rgba(27, 77, 123, 0.8);
+    background: rgba(27, 77, 123, 0.8);
+    
+    position:absolute;
+    top: 50px;
+    right:0;
+    left:0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#map-screen-2 h3 {
+    color: #fff;
+}
