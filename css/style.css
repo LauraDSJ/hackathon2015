@@ -71,6 +71,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c53', end
     background-color: #fff;
     color: #ff4439;
 }
+
+a {
+    color:#fff;
+}
+
+a:hover {
+    color:#fff;
+}
 /* SCREEN 1. WELCOME SCREEN */
 
 #welcome-img {width:70%}
@@ -128,4 +136,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5c53', end
     z-index: -1;
     
     overflow: scroll;
+}
+
+.close {
+    float:left;
+    color:#fff;
+    margin-left: 10px;
 }

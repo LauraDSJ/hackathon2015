@@ -34,15 +34,25 @@
         <div id="map-screen-1"></div><!--map-screen-1-->
       
         <div id="map-screen-2" class="text-center center">
+            
+            <div class="separation-40"></div>
+            
           <img src="img/security.png">
           <h3>Want to share your location?</h3>
           <input type="checkbox" checked>
+          
+          <div class="separation-40"></div>    
+            
+          <a href="#" id="location-ok">ready</a>
+            
         </div><!--map-screen-2-->
       
         <!--  PROFILE -->
-        <div id="profile" class="text-center center">
+        <div id="profile" class="text-center">
             
             <div class="separation-40"></div>
+            
+            <a class="close" id="close-profile" href="#">[x]</a>
             
           <img src="http://placehold.it/150x150" class="img-circle">
             
@@ -130,8 +140,25 @@
     <script src="js/bootstrap-switch.js"></script>
       
     <script>
-    $("#map-screen-1").hide(); 
-    $("#map-screen-2").hide(); 
+    $("#map-screen-2").hide();
+    $("#profile").hide();
+        
+    $("#map-screen-1").click( function() {
+        $("#map-screen-1").hide();
+        $("#map-screen-2").show();
+    });
+        
+    $("#location-ok").click( function() {
+        $("#map-screen-2").hide();
+    });
+        
+    $(".navbar-brand").click(function() {
+        $("#profile").show();
+    });
+        
+    $("#close-profile").click(function() {
+        $("#profile").hide();
+    });
         
     $(function(argument) {
       $('[type="checkbox"]').bootstrapSwitch();
